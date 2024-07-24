@@ -6,16 +6,10 @@ const port = 3000;
 
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
-        try {
-          console.log("Hello");
-          res.render("index.ejs");
-        } catch (error) {
-          console.log(error.response.data);
-          res.status(500);
-        }
-      });
-      
+app.get("/", async (req, res) => {
+  res.render("index.ejs");
+});
+
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+  console.log(`Server is running on port ${port}`);
 });
