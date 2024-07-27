@@ -24,14 +24,17 @@
         <option value="Christmas" data-display="Select">Christmas</option>
       </select>
       <div class="flags">
+        <h3>Blacklist Flags</h3>
         <input type="checkbox" name="blacklistFlags" value="nsfw">NSFW
         <input type="checkbox" name="blacklistFlags" value="religious">Religious
         <input type="checkbox" name="blacklistFlags" value="political">Political
         <input type="checkbox" name="blacklistFlags" value="racist">Racist
         <input type="checkbox" name="blacklistFlags" value="sexist">Sexist
       </div>
-      <input type="checkbox" name="contains" value="cat">Cat in the Joke or Joke in a Cat?
-      <button type="submit" class="form-submit">Go</button>
+      <div class="cat">
+        <input type="checkbox" id="catCheck" name="contains" value="cat">Cat in the Joke or Joke in a Cat?
+      </div>
+      <button class="submitButton" type="submit" class="form-submit">Go</button>
     </form>
 
     <section id="cards" class="cards">
