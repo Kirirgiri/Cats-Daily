@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <h1>DAILY CATS</h1>
+  <h1>DAILY Jokes</h1>
 
   <div class="container">
     <h2>Some Jokes</h2>
@@ -32,10 +32,12 @@
         <input type="checkbox" name="blacklistFlags" value="sexist">Sexist
       </div>
       <div class="cat">
+        <h3>Do you want a Cat in a Joke?</h3>
         <input type="checkbox" id="catCheck" name="contains" value="cat">Cat in the Joke or Joke in a Cat?
       </div>
       <button class="submitButton" type="submit" class="form-submit">Go</button>
     </form>
+  </div>
 
     <section id="cards" class="cards">
       <% if (locals.data) {%>
@@ -54,7 +56,6 @@
         <%= error %>
       </div>
       <%}%>
-  </div>
 </body>
 
 </html>
